@@ -42,7 +42,7 @@ ead:
 
 authuser:
   refreshscope:
-    name: Ricardo Tonietti
+    name: Ricardo Tonietti Rodrigues
 
 management:
   endpoints:
