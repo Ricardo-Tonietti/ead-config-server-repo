@@ -6,9 +6,6 @@ server:
 spring:
   application:
     name: ead-course-service
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
   datasource:
     url:  jdbc:postgresql://localhost:5432/ead-course-v2
     username: postgres
@@ -16,7 +13,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibertnate.dialect.PostgreSQLDialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
       jdbc:
         lob.non-contextual-creation: true
     properties:
@@ -24,10 +21,10 @@ spring:
         show_sql: true
   output:
     ansi:
-      enabled: ALWAYS
-
+      enabled: Always
   rabbitmq:
-    addresses: amqps://vieccwab:oihhqDXJ59lYp9EYQaV8pNYba_48q46c@toad.rmq.cloudamqp.com/vieccwab
+    addresses: amqps://oqaevxaf:6KU7WK_x0k2Et0CwgwlOOdf95NAR4uPG@woodpecker.rmq.cloudamqp.com/oqaevxaf
+
 
 logging:
   level:
@@ -39,13 +36,16 @@ logging:
 ead:
   api:
     url:
-      authuser: 'http://ead-authuser-service/ead-authuser/'
+      authuser: 'http://ead-authuser-service/ead-authuser'
   broker:
     exchange:
       userEventExchange: ead.userevent
+      notificationCommandExchange: ead.notificationcommand
     queue:
       userEventQueue:
         name: ead.userevent.ms.course
+    key:
+      notificationCommandKey: ms.notification
 
 management:
   endpoints:

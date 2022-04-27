@@ -23,6 +23,7 @@ spring:
   output:
     ansi:
       enabled: Always
+      
   rabbitmq:
     addresses: amqps://vieccwab:oihhqDXJ59lYp9EYQaV8pNYba_48q46c@toad.rmq.cloudamqp.com/vieccwab
 
