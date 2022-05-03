@@ -6,7 +6,7 @@ ead:
 
   auth:
     jwtSecret: C*F-JaNdRgUkXp2r5u8x/A?D(G+KbPeShVmYq3t6v9y$B&E)H@McQfTjWnZr4u7x
-    jwtExpirationsMS: 14400000
+    jwtExpirationMs: 14400000
 
 eureka:
   client:
