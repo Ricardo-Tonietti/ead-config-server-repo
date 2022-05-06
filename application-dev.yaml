@@ -4,7 +4,7 @@ ead:
     password: 'ead123sr'
 
   auth:
-    jwtSecret: v9y/B?E(H+MbQeThWmZq4t7w!z%C&F)J@NcRfUjXn2r5u8x/A?D(G-KaPdSgVkYp
+    jwtSecret: z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)H@McQfTjWmZq4t
     jwtExpirationMs: 14400000
 
 eureka:
