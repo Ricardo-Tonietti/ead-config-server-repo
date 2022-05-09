@@ -24,10 +24,6 @@ spring:
       enabled: Always
   rabbitmq:
     addresses: amqps://oqaevxaf:6KU7WK_x0k2Et0CwgwlOOdf95NAR4uPG@woodpecker.rmq.cloudamqp.com/oqaevxaf
-  boot:
-    admin:
-      client:
-        url: http://localhost:8089
 
 logging:
   level:
@@ -57,17 +53,4 @@ management:
         include:
           - refresh
           - health
-          - info
-    health:
-      show-details: Always
-
-info:
-  app:
-    name: @project.name@
-    description: @project.description@
-    version: @project.version@
-    encoding: @project.build.sourceEncoding@
-    java:
-      version: @java.version@
-# puxa informacoes do projeto do pom.xml
       
