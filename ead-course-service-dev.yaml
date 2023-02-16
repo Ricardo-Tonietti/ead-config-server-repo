@@ -23,7 +23,7 @@ spring:
     ansi:
       enabled: Always
   rabbitmq:
-    addresses: amqps://vieccwab:oihhqDXJ59lYp9EYQaV8pNYba_48q46c@toad.rmq.cloudamqp.com/vieccwab
+    addresses: amqps://uijdubrw:VlZF9o8Z44P2KyrXNenqR4h7zkaSqOKX@moose.rmq.cloudamqp.com/uijdubrw
   
 
 logging:
