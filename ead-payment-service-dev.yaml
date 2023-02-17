@@ -35,6 +35,15 @@ logging:
     org.springframework.web: DEBUG
     org.hibernate: INFO
 
+ead:
+  broker:
+    exchange:
+      userEventExchange: ead.userevent      
+    queue:
+      userEventQueue:
+        name: ead.userevent.ms.payment
+    
+    
 management:
   endpoints:
     web:
