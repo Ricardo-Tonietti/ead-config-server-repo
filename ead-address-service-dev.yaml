@@ -1,0 +1,47 @@
+server:
+  port: 8087
+  servlet:
+    context-path: '/ead-address/'
+
+spring:
+  application:
+    name: ead-address-service  
+    
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/ead-address-v2
+    username: postgres
+    password: Info@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+  output:
+    ansi:
+      enabled: Always
+      
+  rabbitmq:
+    addresses: amqps://uijdubrw:VlZF9o8Z44P2KyrXNenqR4h7zkaSqOKX@moose.rmq.cloudamqp.com/uijdubrw
+
+logging:
+  level:
+    com.ead: TRACE
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
+
+
+
+
