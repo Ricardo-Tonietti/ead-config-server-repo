@@ -6,6 +6,7 @@ server:
 spring:
   application:
     name: ead-authuser-service
+  sql.init.mode: always
   datasource:
     url:  jdbc:postgresql://localhost:5432/ead-authuser-v2
     username: postgres
@@ -13,7 +14,7 @@ spring:
   jpa:
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
       dialect: org.hibertnate.dialect.PostgreSQLDialect
       jdbc:
         lob.non-contextual-creation: true
